@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+@font-face {
+    font-family: 'TECHNO SPACE', sans-serif;
+    src: url(./TechnoSpaceFont/Techno\ Space.ttf);
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+:root {
+    --main-color: #66FCF1;
+    --second-color: #46A29F;
+    --accent-color: #C5C6C7;
+}
+
+.font-p {
+    font-family: 'TECHNO SPACE', sans-serif;
+}
+
+.font-s {
+    font-family: 'Electrolize', sans-serif;
+}
+
+.m {
+    color: var(--main-color);
+}
+
+.s {
+    color: var(--second-color);
+} 
+
+.acc {
+    color: var(--accent-color);
+}
+
+.bg-m {
+    background-color: var(--main-color);
+}
+
+.bg-s {
+    background-color: var(--second-color) !important;
+}
+
+.bg-acc {
+    background-color: var(--accent-color);
+}
+
+.border-nav-menu {
+    position: relative;
+    transition: 0.4s;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.border-nav-menu::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--main-color);
+    left: 0px;
+    bottom: -3px;
+}
+
+.border-nav-menu:hover::before {
+    bottom: 0px;
+}
+
+.border-nav-main {
+    border-bottom: 2px solid var(--second-color) !important;
+    background-color: #000;
+}
+
+.border-nav-main::before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 189px;
+    background-color: #fff;
+    top: 56px;
+    left: -9px;
+    transform: skew(-30deg);
+    background-color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid var(--second-color);
+    border-right: 2px solid var(--second-color);
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.bg-numbers-container {
+    background: linear-gradient(black, transparent, black), url('./media/halo1.jpeg');
+}
+
+.border-visit {
+    border-bottom: 2px solid var(--main-color);
+    position: relative;
+}
+
+.border-visit::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: var(--main-color);
+    right: -2px;
+    bottom: -8px;
+}
+
+.border-numbers-custom {
+    background: 
+    linear-gradient(to right, var(--second-color) 2px , transparent 2px) 0 0, 
+    linear-gradient(to right, var(--second-color) 2px, transparent 2px) 0 100%, 
+    linear-gradient(to left, var(--second-color) 2px, transparent 2px) 100% 0, 
+    linear-gradient(to left, var(--second-color) 2px, transparent 2px) 100% 100%, 
+    linear-gradient(to bottom, var(--second-color) 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, var(--second-color) 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, var(--second-color) 2px, transparent 2px) 0 100%, 
+    linear-gradient(to top, var(--second-color) 2px, transparent 2px) 100% 100% 
+    ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.card-game-shadow {
+    box-shadow: 0px 0px 6px gray;
+}
+
+
+
+
+.cta {
+    position: relative;
+    background-color: black;
+    height: 0vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cta video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+}
+
+.btn-cta {
+    background-color: transparent;
+    border: 2px solid var(--second-color);
+    color: var(--acc-color);
+    font-size: 20px;
+}
+
+
+.bg-footer {
+    border-top: 2px solid var(--second-color);
+    position: relative;
+    background-color: #000;
+}
+
+.bg-footer::before {
+    position: absolute;
+    content: "";
+    height: 17%;
+    width: 28%;
+    top: -32px;
+    right: -83px;
+    border-top: 2px solid var(--second-color);
+    border-left: 2px solid var(--second-color);
+    border-bottom: 3px solid black;
+    transform: skew(-20deg);
+} 
+
+.form-check-input[type=checkbox] {
+    background-color: var(--second-color);
+}
+
+.bg-form {
+    backdrop-filter: blur(10px);
+}
+
+.filter-select-all {
+    background: #000;
+    border: 2px solid var(--second-color);
+    border-radius: 0px;
+    color: var(--second-color);
+}
+.form-select {
+    background-image: url('./media/down.png');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
