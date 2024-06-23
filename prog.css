@@ -1,0 +1,68 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Jeremy-thomas-unsplash" sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(/my-app/jeremy-thomas-E0AHdsENmDg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    border-bottom: 50px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+
+}
+
+.Lorem {
+    color: wheat;
+    position: absolute;
+    top: 200px;
+
+
+}
+
+.header {
+    
+}
